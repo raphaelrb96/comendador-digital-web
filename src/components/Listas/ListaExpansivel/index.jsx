@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 
 // Libraries
 import { Accordion } from 'react-bootstrap'
-import { m } from "framer-motion"
+import { motion } from "framer-motion"
 
 import "../../../Assets/scss//components/_accordion.scss"
 
@@ -14,7 +14,7 @@ const ListaExpansivel = (props) => {
                 {
                     props.data.map((item, key) => {
                         return (
-                            <div className={`accordion-item-wrapper`}
+                            <motion.div className={`accordion-item-wrapper`}
                                 key={key}
                                 {...{ ...props.animation, transition: { delay: key * props.animationDelay } }}
                             >
@@ -28,7 +28,7 @@ const ListaExpansivel = (props) => {
                                     }
                                     {item.content && <Accordion.Body  className='pt-4'> {item.content} </Accordion.Body>}
                                 </Accordion.Item>
-                            </div>
+                            </motion.div>
                         )
                     })
                 }

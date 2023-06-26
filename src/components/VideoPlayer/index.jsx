@@ -1,5 +1,4 @@
 import React, { memo } from 'react'
-import { PropTypes } from 'prop-types';
 
 const VideoPlayer = (props) => {
     const style = { "background": typeof (props.overlay) === "object" ? `linear-gradient(to right top, ${props.overlay.map((item, i) => item)})` : props.overlay, "opacity": props.opacity }
@@ -14,7 +13,7 @@ const VideoPlayer = (props) => {
                         (props.src.match(/^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/) || props.src.match(/(?:www\.|player\.)?vimeo.com\/(?:channels\/(?:\w+\/)?|groups\/(?:[^/]*)\/videos\/|album\/(?:\d+)\/video\/|video\/|)(\d+)(?:[a-zA-Z0-9_-]+)?/)) ? (
                             <iframe title="Video Player" className='h-full object-fill' src={props.src} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         ) : (
-                            <video loop={props.loop} autoPlay='autoplay' onloadstart={props.velocity ? `this.playbackRate = ${props.velocity};` : null} className='h-full object-fill' muted poster={props.poster}>
+                            <video loop={props.loop} autoPlay='autoplay' onLoadStart={props.velocity ? `this.playbackRate = ${props.velocity};` : null} className='h-full object-fill' muted poster={props.poster}>
                                 <source type="video/mp4" className='object-fill h-full' src={props.src} />
                                 <source type="video/webm" src={props.src} />
                             </video>
@@ -26,22 +25,5 @@ const VideoPlayer = (props) => {
     )
 }
 
-VideoPlayer.defaultProps = {
-    className: "",
-    loop: false,
-    poster: "",
-    opacity: 0.5
-}
-
-VideoPlayer.propTypes = {
-    className: PropTypes.string,
-    loop: PropTypes.bool,
-    poster: PropTypes.string,
-    opacity: PropTypes.number,
-    overlay: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.object
-    ]),
-}
 
 export default memo(VideoPlayer)

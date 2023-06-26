@@ -18,10 +18,10 @@ const InscricaoEmailOito = () => {
             <Grid item xl={7} lg={8} md={10} className="xs:px-0">
               <div className="text-center font-serif font-medium bg-white rounded-[6px] p-28 sm:p-20 xs:p-16">
                 <span className="text-basecolor block uppercase mb-[10px]">
-                  Let's get started now
+                  Lets get started now
                 </span>
                 <h6 className="inline-block text-darkgray -tracking-[1px] w-[80%] mb-14 lg:w-[85%] sm:w-[55%] xs:w-full">
-                  Don't miss this amazing latest news and opportunities!
+                  Dont miss this amazing latest news and opportunities!
                 </h6>
                 <Formik
                   initialValues={{ email: "" }}

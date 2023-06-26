@@ -32,7 +32,7 @@ const ContainerListaTextoUm = (props) => {
                 props.data.lista.map((item, i) => {
                     return (
                         <Grid item xs={xs ? xs : 12} sm={sm ? sm : 12} md={md ? md : 6} lg={lg ? lg : 4} xl={xl ? xl : 4} className={`feature-box${props.className ? ` ${props.className} ` : "" }`} key={i}>
-                            <div className={"feature-box-content " + `${dark ? 'text-gray-300' : 'text-gray-800'}`} {...{...props.animation,transition:{delay : i * props.animationDelay}}}>
+                            <motion.div className={"feature-box-content " + `${dark ? 'text-gray-300' : 'text-gray-800'}`} >
                                 {
                                     (props.theme === "text-box-style-01") ?
                                         <>
@@ -46,7 +46,7 @@ const ContainerListaTextoUm = (props) => {
                                         </>
                                 }
                                 <p>{item.description}</p>
-                            </div>
+                            </motion.div>
                         </Grid>
                     )
                 })

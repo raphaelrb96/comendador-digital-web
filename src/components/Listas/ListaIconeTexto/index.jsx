@@ -22,7 +22,7 @@ const ListaIconeTexto = (props) => {
       {
         props.data.map((item, i) => {
           return (
-            <Grid item key={i} xs={xs ? xs : 12} sm={sm ? sm : 12} md={md ? md : 6} lg={lg ? lg : 4} xl={xl ? xl : 4} className={`${props.theme ? ` ${props.theme}` : ""}${props.className ? ` ${props.className}` : ""}`} {...{ ...props.animation, transition: { delay: i * props.animationDelay, ease: props.animationTransition, duration: props.animationDuration } }}>
+            <Grid item key={i} xs={xs ? xs : 12} sm={sm ? sm : 12} md={md ? md : 6} lg={lg ? lg : 4} xl={xl ? xl : 4} className={`${props.theme ? ` ${props.theme}` : ""}${props.className ? ` ${props.className}` : ""}`}>
               <div className="rounded-md justify-center content-center w-full">
                 {
                   item.img ? (

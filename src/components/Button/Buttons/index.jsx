@@ -1,8 +1,6 @@
 import React, { memo } from 'react'
 
 // Libraries
-import { Link } from 'react-router-dom'
-import PropTypes from "prop-types";
 import { Button } from 'react-bootstrap';
 
 import "../../..//Assets/scss/components/_button.scss"
@@ -62,26 +60,6 @@ const ButtonInner = (props) => {
       {(props.theme === "btn-link-gradient") && <span></span>}
     </>
   )
-}
-
-Buttons.defaultProps = {
-  size: "lg",
-  style: "primary"
-}
-
-Buttons.propTypes = {
-  className: PropTypes.string,
-  type: PropTypes.string,
-  href: PropTypes.string,
-  to: PropTypes.string,
-  size: PropTypes.string,
-  themeColor: PropTypes.oneOfType([ PropTypes.string, PropTypes.array, ]),
-  btnColor: PropTypes.oneOfType([ PropTypes.string, PropTypes.array, ]),
-  color: PropTypes.oneOfType([ PropTypes.string, PropTypes.array ]),
-  title: PropTypes.oneOfType([ PropTypes.string, PropTypes.object ]),
-  icon: PropTypes.string,
-  iconPosition: PropTypes.string,
-  onClick: PropTypes.func,
 }
 
 export default memo(Buttons)
