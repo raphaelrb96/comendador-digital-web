@@ -44,7 +44,7 @@ const ContainerQuemSomos = (props) => {
             <img src={props.data.img} alt="" className="rounded-[6px] object-cover h-full" />
           </Grid>
           
-          <Grid lg={2} md={2} xs={6} sm={5} item className="xs:mt-8 sm:mt-8 mt-5 xs:ml-[0px] sm:ml-[0px] ml-[20px]" >
+          <Grid lg={2} md={2} xs={6} sm={5} item className="  xs:ml-[0px] sm:ml-[0px] ml-[20px]" {...{ ...fadeIn, transition: { delay: 0.8 } }}>
             <Contagem 
               theme="counter-style-03" 
               grid="pl-[30px] xs:pl-[0px] sm:pl-[0px]" 
