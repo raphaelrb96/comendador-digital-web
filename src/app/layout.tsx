@@ -11,7 +11,6 @@ import "../Assets/css/icons.css";
 import "../Assets/css/global.css";
 import "../Assets/css/pages.css";
 import "../index.scss";
-import { Inter } from 'next/font/google'
 
 
 export const metadata = {
@@ -24,12 +23,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode,
 }) {
+
+
+  
   return (
     <html lang="en">
       <head>
-        <title>{'Home'}</title>
+        <title>{'Social Money'}</title>
+        
+          
       </head>
-      <body className="flex-1 flex">
+      <body className="flex-1 flex scroll-smooth">
         {children}
       </body>
     </html>

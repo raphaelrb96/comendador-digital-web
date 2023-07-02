@@ -16,7 +16,7 @@ const DepoimentoUm = (props) => {
   const {xs, sm, md, lg, xl} = props;
   const {dark} = props;
   return (
-    <section className="bg-lightgray py-[100px] lg:py-[80px] md:py-[65px] sm:py-[50px] xs:py-[30px] border-t">
+    <section className="bg-lightgray py-[120px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] border-t">
       <Container>
         <Grid container alignContent={'center'} alignItems={'center'} justifyContent={'center'} className="justify-center">
           <Grid xs={12} sm={10} md={8} lg={10} item className="text-center mb-[6%]">

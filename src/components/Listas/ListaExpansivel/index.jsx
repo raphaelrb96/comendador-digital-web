@@ -16,7 +16,6 @@ const ListaExpansivel = (props) => {
                         return (
                             <motion.div className={`accordion-item-wrapper`}
                                 key={key}
-                                {...{ ...props.animation, transition: { delay: key * props.animationDelay } }}
                             >
                                 <Accordion.Item key={key} eventKey={key}>
                                     {item.title && 

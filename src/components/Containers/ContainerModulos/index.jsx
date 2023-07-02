@@ -31,11 +31,11 @@ const ContainerModulos = (props) => {
   } else {
 
     return (
-        <div className="w-full py-[90px] lg:py-[80px] md:py-[65px] sm:py-[40px] overflow-hidden bg-lightgray">
+        <div className="w-full py-[120px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] overflow-hidden bg-lightgray">
           
           <Grid container alignContent={'center'} alignItems={'center'} justifyContent={'center'} className="justify-center">
             <Grid xs={12} sm={10} md={8} lg={10} item className="text-center mb-[50px]">
-              <h6 className={`font-serif ${dark ? ' text-white ' : ' text-darkgray '} text-center font-medium mb-[15px] mt-10 lg:mb-[15px]`}>
+              <h6 className={`font-serif ${dark ? ' text-white ' : ' text-darkgray '} text-center font-medium mb-[15px] lg:mb-[15px]`}>
                 {props.data.subTitle}
               </h6>
               <h3 className={`font-serif ${dark ? ' text-white ' : ' text-darkgray '} text-center font-bold mb-[10px] lg:mb-[15px]`}>

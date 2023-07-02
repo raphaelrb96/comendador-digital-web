@@ -2,21 +2,13 @@
 import RootLayout from './layout';
 import Home from '../layouts/Home';
 
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import Script from 'next/script';
 
-
-import "../Assets/css/icons.css";
-import "../Assets/css/global.css";
-import "../Assets/css/pages.css";
-import "../index.scss";
-
+export const DEBUG = true;
 
 export default function App() {
   return (
-    <RootLayout titulo="Social Money">
+    <RootLayout titulo="Home">
       <Home />
     </RootLayout>
   );

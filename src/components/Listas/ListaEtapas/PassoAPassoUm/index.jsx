@@ -10,7 +10,7 @@ const PassoAPassoUm = (props) => {
                 props.data.map((item, i) => {
                     return (
                         <Grid key={i} xs={12} md={6} lg={3}>
-                            <motion.div key={i} className={`${props.theme} process-step`} {...{ ...props.animation, transition: { delay: i * props.animationDelay,ease: [0.33,1,0.68,1], duration: 1 } }}>
+                            <motion.div key={i} className={`${props.theme} process-step`}>
                                 <div className='process-step-icon-box'>
                                     <span className='process-step-bfr'></span>
                                     {item.icon && <div className="process-step-icon"><i className={item.icon}></i></div>}

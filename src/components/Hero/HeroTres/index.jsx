@@ -17,7 +17,7 @@ const HeroTres = (props) => {
     return (
         <section >
             <VideoPlayer
-                className="py-[120px] h-full lg:py-[120px] md:py-[95px] sm:py-[80px] bg-slate-950 xs:py-[50px]"
+                className="py-[120px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] h-full bg-slate-950"
                 src={urlVideo}
                 loop={true}
                 poster="https://via.placeholder.com/1920x1080"
@@ -29,17 +29,17 @@ const HeroTres = (props) => {
                     <Grid container className="items-center z-[1] relative overflow-hidden">
                         <Grid item xl={5} md={6} className="sm:mb-[40px]  overflow-hidden">
                             <h2 className="heading-5 font-serif font-semibold text-[#f1edf2] uppercase mb-[5px]">{subhead}</h2>
-                            <h1 className="font-serif font-bold xs:text-[42px] sm:text-[42px] uppercase text-gradient bg-gradient-to-r from-[#c4a2e1] via-[#d9c3eb] to-[#a664df] mb-[25px] tracking-[-1px]"> {headline}</h1>
+                            <h1 className="font-serif font-bold uppercase text-gradient bg-gradient-to-r from-[#c4a2e1] via-[#d9c3eb] to-[#a664df] mb-[25px] tracking-[-1px]"> {headline}</h1>
                             <p className="w-[90%] text-lg mb-[45px] text-[#d9c9de] leading-[30px] xs:text-xmd">
                                 {description}
                             </p>
                             <div className="xs:text-center">
-                                <Buttons ariaLabel="link for pricing-packages" to="/page/pricing-packages" className="mr-[38px] xs:mx-0 xs:w-full sm:mx-[14px] rounded-[4px] font-medium font-serif hover:text-gray-100 uppercase md:mb-[15px]" themeColor={["#4f1b7d", "#7637ad"]} size="xl" color="#fff" title={btn} />
-                                <Buttons ariaLabel="link for modal button" className="font-medium font-serif xs:!p-0 uppercase btn-link after:h-[2px] md:text-md md:mb-[15px] after:bg-gray-300 hover:text-gray-400 text-gray-300" color="#cdcfd5" size="xl" title={btnExtra} />
+                                <Buttons ariaLabel="link for pricing-packages" href="#compre" className="mr-[38px] xs:mx-0 xs:w-full sm:mx-[14px] rounded-[4px] font-medium font-serif hover:text-gray-100 uppercase xs:mb-[25px] sm:mb-[25px] md:mb-[15px]" themeColor={["#4f1b7d", "#7637ad"]} size="xl" color="#fff" title={btn} />
+                                {btnExtra ? <Buttons ariaLabel="link for modal button" className="font-medium font-serif xs:!p-0 uppercase btn-link after:h-[2px] md:text-md md:mb-[15px] after:bg-gray-300 hover:text-gray-400 text-gray-300" color="#ffffff" size="xl" title={btnExtra} /> : null}
                             </div>
                             
                         </Grid>
-                        <Grid item xl={7} md={6} className="text-right ">
+                        <Grid item xl={7} md={6} className="text-right mt-4 xs:mt-5 sm:mt-5">
                             <img className="inline-block w-full h-auto " src="/assets/img/illustrations/img1.png" alt="" />
                         </Grid>
                     </Grid>

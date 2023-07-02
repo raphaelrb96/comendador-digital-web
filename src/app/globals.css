@@ -18,9 +18,14 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  scroll-behavior: smooth;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     );
+}
+
+html {
+  scroll-behavior: smooth;
 }

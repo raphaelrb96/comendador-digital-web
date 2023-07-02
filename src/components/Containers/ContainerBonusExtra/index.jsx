@@ -20,7 +20,7 @@ const ContainerBonusExtra = (props) => {
   const {xs, sm, md, lg, xl} = props;
   const {dark} = props;
   return (
-    <section className=" bg-lightgray w-full pb-[4%] pt-[70px] xs:pt-[50px] border-b border-[#ededed] overflow-hidden sm:pb-22">
+    <section className=" bg-lightgray w-full py-[120px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] border-b border-[#ededed] overflow-hidden">
       <Container>
         <Grid container alignContent={'center'} alignItems={'center'} justifyContent={'center'} className="justify-center xs:mb-16">
           <Grid lg={5} sm={7} className="text-center font-serif mb-[60px] md:mb-[35px] sm:mb-16 xs:mb-0" item>

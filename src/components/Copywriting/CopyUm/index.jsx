@@ -9,6 +9,8 @@ import Buttons from "../../Button/Buttons"
 import { motion, m } from "framer-motion"
 
 import CarrosselQuatro from '../../Carrosseis/CarrosselQuatro'
+import TextCopy from '../../Texto/TextCopy'
+
 
 import "../../../Assets/scss/pages/_startup.scss"
 
@@ -28,21 +30,10 @@ const CopyUm = (props) => {
     return <></>;
   } else {
     return (
-      <section className="py-[130px] lg:py-[90px] md:py-[75px] sm:py-[50px] overflow-hidden bg-lightgray">
+      <section className="py-[120px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] overflow-hidden bg-lightgray">
         <Container className="items-center">
           
-          <Grid container alignContent={'center'} alignItems={'center'} justifyContent={'center'} className="justify-center">
-            <Grid sm={12} lg={10} item className="text-center mb-[26px]">
-              <h6 className={`font-serif ${dark ? ' text-white ' : ' text-darkgray '} text-center font-medium mb-[15px] lg:mb-[15px]`}>
-                {props.data.subTitle}
-              </h6>
-              <h3 className={`font-serif ${dark ? ' text-white ' : ' text-darkgray '} text-center font-bold mb-[10px] lg:mb-[15px]`}>
-                <div className={`${dark ? ' text-white text-gradient bg-gradient-to-r from-[#c4a2e1] via-[#d9c3eb] to-[#a664df]' : ' text-gradient bg-gradient-to-r from-[#4e3167] via-[#6a3496] to-[#8828dc]'}`}>
-                  {props.data.title}
-                </div>
-              </h3>
-            </Grid>
-          </Grid>
+          <TextCopy data={props.data} />
 
           <Grid container xs={12} className="justify-center text-center mb-[26px]">
 

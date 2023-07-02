@@ -15,7 +15,7 @@ const ContainerListaTextoUm = (props) => {
   const {xs, sm, md, lg, xl} = props;
   const {dark} = props;
   return (
-    <section className="pt-[100px] lg:pt-[100px] md:pt-[65px] sm:pt-[50px] xs:pt-[50px]">
+    <section className="py-[120px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px]">
       <Container>
         <Grid container alignContent={'center'} alignItems={'center'} justifyContent={'center'} className="mb-[6%]">
           <Grid xs={12} sm={10} md={8} lg={10} item>

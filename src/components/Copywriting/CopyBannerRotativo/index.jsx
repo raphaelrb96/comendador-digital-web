@@ -20,7 +20,7 @@ const CopyBannerRotativo = (props) => {
   const {xs, sm, md, lg, xl} = props;
   const {dark} = props;
   return (
-    <section className="py-[130px] lg:py-[90px] md:py-[75px] sm:py-[50px] overflow-hidden">
+    <section className="py-[120px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] overflow-hidden">
       <Container className="items-center">
         <Grid container justifyContent="center" xs={12} sm={12} md={12} alignContent={'center'} alignItems={'center'}>
             <Grid sm={8} lg={8} className="md:text-center mb-[60px] md:mb-[40px] sm:mb-[36px] xs:mb-[36px] pt-6" item>

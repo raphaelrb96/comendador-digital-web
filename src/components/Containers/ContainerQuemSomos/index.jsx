@@ -20,7 +20,7 @@ const ContainerQuemSomos = (props) => {
   const {xs, sm, md, lg, xl} = props;
   const {dark} = props;
   return (
-    <section className="py-[160px]  overflow-hidden lg:py-[120px] md:pb-[160px] sm:py-[80px]">
+    <section className="overflow-hidden py-[120px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px]">
       <Container>
         <Grid container className="sm:mb-0" justifyContent='center' alignContent='center' alignItems="flex-start">
           
@@ -44,7 +44,7 @@ const ContainerQuemSomos = (props) => {
             <img src={props.data.img} alt="" className="rounded-[6px] object-cover h-full" />
           </Grid>
           
-          <Grid lg={2} md={2} xs={6} sm={5} item className="  xs:ml-[0px] sm:ml-[0px] ml-[20px]" >
+          <Grid lg={2} md={2} xs={6} sm={5} item className="xs:mt-8 sm:mt-8 mt-5 xs:ml-[0px] sm:ml-[0px] ml-[20px]" >
             <Contagem 
               theme="counter-style-03" 
               grid="pl-[30px] xs:pl-[0px] sm:pl-[0px]" 

@@ -8,7 +8,7 @@ const ListaSimples = (props) => {
                 props.data.map((item, i) => {
                     return (
                         <motion.li className={props.theme} key={i}  {...{ ...props.animation, transition: { delay: (i+1) * props.animationDelay, initial: { opacity: 0, x: "100%" }, ease: [0.25, 1, 0.5, 1], duration: 1.2 } }}>
-                            {item.icon && <i className={item.icon} style={{color: '#8519c9'}}></i>}
+                            {item.icon && <i className={item.icon} style={{color: '#c2c2c2'}}></i>}
                             {item.linkTitle && <a aria-label="list" href={item.link} >{item.linkTitle}</a>}
                             {item.title ?
                                 <div className='block'>

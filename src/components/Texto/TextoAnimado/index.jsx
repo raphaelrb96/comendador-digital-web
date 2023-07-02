@@ -10,7 +10,7 @@ import "../../../Assets/scss/components/_textAnime.scss"
 
 export const TiltBox = (props) => {
   return (
-    <motion.div className="justify-center" {...props.animation}>
+    <motion.div className="justify-center">
       <Atropos
         highlight={false}
         stretchX={0}

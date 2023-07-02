@@ -1,35 +1,36 @@
 
 import {fadeIn} from '../../functions/GlobalAnimations.jsx';
-import {dataHeroUm, InteractiveBannersData01, objHeadersComItens} from '../../functions/examples';
-import ContainerListaTextoUm from "../../components/Containers/ContainerListaTextoUm";
-import ContainerListaTextoDois from '../../components/Containers/ContainerListaTextoDois';
-import HeroTres from '../../components/Hero/HeroTres';
+import {dataHeroUm, InteractiveBannersData01, objHeadersComItens} from '../../functions/examples.jsx';
+import ContainerListaTextoUm from "../../components/Containers/ContainerListaTextoUm/index.jsx";
+import ContainerListaTextoDois from '../../components/Containers/ContainerListaTextoDois/index.jsx';
+import HeroTres from '../../components/Hero/HeroTres/index.jsx';
 import { Grid } from '@mui/material';
-import DepoimentoUm from '../../components/Depoimentos/DepoimentoUm';
-import CopyUm from '../../components/Copywriting/CopyUm';
-import CopyBannerRotativo from "../../components/Copywriting/CopyBannerRotativo";
-import ContainerModulos from "../../components/Containers/ContainerModulos";
-import ContainerBonusExtra from "../../components/Containers/ContainerBonusExtra";
-import ContainerChamadaUm from "../../components/Containers/ContainerChamadaUm";
-import ContainerQuemSomos from "../../components/Containers/ContainerQuemSomos";
-import ContainerPerguntasRespostas from "../../components/Containers/ContainerPerguntasRespostas";
-import ContainerChamadaDois from "../../components/Containers/ContainerChamadaDois";
-import RodapeUm from "../../components/Rodape/RodapeUm";
+import DepoimentoUm from '../../components/Depoimentos/DepoimentoUm/index.jsx';
+import CopyUm from '../../components/Copywriting/CopyUm/index.jsx';
+import CopyBannerRotativo from "../../components/Copywriting/CopyBannerRotativo/index.jsx";
+import ContainerModulos from "../../components/Containers/ContainerModulos/index.jsx";
+import ContainerBonusExtra from "../../components/Containers/ContainerBonusExtra/index.jsx";
+import ContainerChamadaUm from "../../components/Containers/ContainerChamadaUm/index.jsx";
+import ContainerQuemSomos from "../../components/Containers/ContainerQuemSomos/index.jsx";
+import CopyText from "../../components/Copywriting/CopyText/index.jsx";
+import ContainerChamadaDois from "../../components/Containers/ContainerChamadaDois/index.jsx";
+import RodapeUm from "../../components/Rodape/RodapeUm/index.jsx";
 import { memo } from 'react';
+import TextCopy from '../../components/Texto/TextCopy/index.jsx';
 
 
 
 const HeroTresData = {
-    btn: 'QUERO APRENDER A LUCRAR',
-    btnExtra: undefined,
-    subhead: 'Monetize seu tempo online:',
-    headline: 'Ganhe muito dinheiro com suas redes sociais',
-    description: 'Você está prestes a descobrir uma oportunidade única que pode mudar completamente a forma como você monetiza suas redes sociais.'
+    btn: 'LIBERAR O ACESSO',
+    btnExtra: 'OFERTA IMPERDÍVEL',
+    subhead: 'EM POUCAS PALAVRAS VOU TE MOSTRAR:',
+    headline: 'O GUIA COMPLETO para se tornar um empreendedor digital de sucesso',
+    description: 'Leia essa resumo rápido e em menos de 1 minuto tenha acesso a uma oportunidade única que pode mudar completamente a forma como você monetiza suas redes sociais.'
 };
 
 const dataSoltions = {
-    title: 'Temos a solução perfeita pra você que deseja começar',
-    destaqueTitle: 'VIVER DAS REDES SOCIAIS',
+    title: 'Temos a solução perfeita pra você que deseja começar a',
+    destaqueTitle: 'EMPREENDER NA INTERNET',
     description: 'Mesmo que você esteja começando do ABSOLUTO ZERO ou se passa pelos seguintes PROBLEMAS:',
     lista: [
         {
@@ -173,34 +174,34 @@ const conteudo = {
 };
 
 const introducao = {
-    headline: 'Como você se sentiria se conseguisse transformar sua paixão pelas redes sociais em uma fonte de renda sólida e duradoura?',
+    headline: 'SOCIAL MONEY FOI PLANEJADO EXCLUSIMENTE PARA VOCÊ:',
     content: [
         {
             img: "assets/video/comemorar.gif",
-            title: "Chegou a sua vez!",
+            title: "Influenciador e criador de conteúdo que deseja transformar sua presença online em uma fonte de renda lucrativa.",
             subtitle: "Ler Mais",
             icon: "fas fa-money-bill-wave",
             btnLink: "#compre",
             btnTitle: "COMEÇAR AGORA",
-            content: "Aprenda como aproveitar todas as oportunidades que as redes sociais oferecem. Atraves do nosso guia completo."
+            content: ""
         },
         {
             img: "assets/video/oportunidade_unica.gif",
-            title: "Oportunidade Unica",
+            title: "Profissional autônomos que deseja diversificar suas fontes de renda e explorar oportunidades de negócios online.",
             subtitle: "Ler Mais",
             icon: "fas fa-money-bill-wave",
             btnLink: "#compre",
             btnTitle: "COMEÇAR AGORA",
-            content: "Descubra como atrair clientes, precificar seus serviços e construir uma reputação impecável no mercado digital."
+            content: ""
         },
         {
             img: "assets/video/perder_tempo.gif",
-            title: "Não perca mais tempo!",
+            title: "CLT que deseja desenvolver uma mentalidade vencedora e adquirir as habilidades necessárias para ter sucesso na internet.",
             subtitle: "Ler Mais",
             icon: "fas fa-money-bill-wave",
             btnLink: "#compre",
             btnTitle: "COMEÇAR AGORA",
-            content: "Dê o primeiro passo rumo à sua independência financeira. Comece agora e transforme seus sonhos em realidade."
+            content: ""
         }
     ]
 }
@@ -374,8 +375,14 @@ const duvidas = {
     ]
 };
 
+const chamadaDois = {
+    btn: 'Ver Oferta',
+    headline: 'Edição limitada: A oferta promocional termina em breve. Aproveite agora mesmo antes do preço subir ou da página sair do ar...',
+    text: "Dê o primeiro passo rumo à sua independência financeira."
+};
 
-function Home () {
+
+function Main () {
     return (
         <Grid className='bg-darkpurple2' justifyContent="center" alignItems={'center'} container>
             
@@ -384,76 +391,23 @@ function Home () {
                     data={HeroTresData} 
                 />
             </Grid>
-            <Grid item sm={12}>
-                <CopyBannerRotativo
-                    data={introducao}
-                />
-            </Grid>
 
             <Grid item xs={12}>
-                <CopyUm
+                <CopyText
                     data={copywrite}
                 />
             </Grid>
 
             <Grid item sm={12}>
-                <ContainerListaTextoUm
-                    className="my-14"
-                    grid="justify-center gap-y-10"
-                    theme="text-box-style-02"
-                    data={dataSoltions}
-                    xs={10}sm={8} md={4} lg={4} xl={4}
-                    dark
-                    animation={fadeIn} 
+                <CopyBannerRotativo
+                    data={introducao}
                 />
             </Grid>
             
-            <ContainerModulos 
-                data={moduls}
-            />
             
-            <ContainerBonusExtra
-                data={bonus}
-            />
-
-            <ContainerChamadaUm
-                data={cta}
-            />
-
-            <Grid item sm={12} lg={10}>
-                <ContainerListaTextoDois
-                    grid=" py-[120px] "
-                    dark
-                    theme="icon-with-text-06"
-                    className="hover:text-purple-950 text-purple-400"
-                    data={beneficios}
-                    xs={12}sm={8} md={6} lg={4} xl={4}
-                    animation={fadeIn}
-                    animationDelay={0.1}
-                />
-            </Grid>
-
-            <Grid className='bg-lightgray' item xs={12} sm={12} md={12}>
-                <DepoimentoUm
-                    grid="gap-y-[10px] bg-lightgray justify-center"
-                    theme='testimonials-style-03 px-[10px] py-[26px]'
-                    className="sm:px-0"
-                    data={depoimento}
-                    animation={fadeIn}
-                    animationDelay={0.3}
-                />
-            </Grid>
-
-            <ContainerQuemSomos
-                data={quemSomos}
-            />
-
-            <ContainerPerguntasRespostas
-                data={duvidas}
-            />
 
             <ContainerChamadaDois
-
+                data={chamadaDois}
             />
 
             <RodapeUm 
@@ -465,4 +419,4 @@ function Home () {
     )
 };
 
-export default memo(Home);
+export default memo(Main);
