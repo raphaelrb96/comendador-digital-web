@@ -24,7 +24,7 @@ const RodapeUm = (props) => {
             </Grid>
 
             <Grid lg={2} md={12} sm={12} xs={12} className="md:order-1 text-center md:mb-[20px] flex justify-center items-center" item>
-              <a aria-label="link for" to="/" className="footer-logo object-cover"><img src="/assets/img/socialmoney.png" alt="" height="70" /></a>
+              <a aria-label="link for" to="/" className="footer-logo object-cover"><img src="/assets/img/socialmoney.png" alt="" height="70" width={100} className="w-auto object-contain" /></a>
                 
             </Grid>
 

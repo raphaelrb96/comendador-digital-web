@@ -24,7 +24,7 @@ const CarrosselUm = (props) => {
         className="testimonial-carousel-style-01">
         {props.data.map((item, i) => {
           return (
-            <Grid xs={12} sm={12} md={12} justifyContent="center" alignContent={'center'} alignItems={'center'} item>
+            <Grid key={i} xs={12} sm={12} md={12} justifyContent="center" alignContent={'center'} alignItems={'center'} item>
                 <SwiperSlide key={i} className="text-center">
                     {item.img && <img width={131} height={131} className="mx-auto mb-[3.5rem] rounded-full overflow-hidden" src={item.img} alt="" />}
                     {item.content && <span className="w-[90%] mx-auto leading-[40px] font-serif font-light text-xlg mb-[49px] inline-block tracking-[-.5px] text-center lg:text-lg md:leading-[26px] md:w-[70%] lg:mb-[3.5rem] xs:w-[80%]"> {item.content} </span>}

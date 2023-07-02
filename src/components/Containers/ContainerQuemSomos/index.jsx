@@ -24,7 +24,7 @@ const ContainerQuemSomos = (props) => {
       <Container>
         <Grid container className="sm:mb-0" justifyContent='center' alignContent='center' alignItems="flex-start">
           
-          <Grid lg={5} md={8} xs={12} sm={10} item className="xs:mb-10 items-center xs:text-center sm:text-center md:text-center lg:text-left " {...{ ...fadeIn, transition: { delay: 0.2 } }}>
+          <Grid lg={5} md={8} xs={12} sm={10} item className="xs:mb-10 items-center xs:text-center sm:text-center md:text-center lg:text-left " >
             <h2 className="heading-4 font-serif lg:w-[90%] xs:w-full sm:w-full md:w-full font-semibold text-gray-200 mb-[30px] sm:mb-[20px]">
                 QUEM SOU EU, E PORQUÊ VOCÊ PRECISA ME OUVIR
             </h2>
@@ -40,11 +40,11 @@ const ContainerQuemSomos = (props) => {
             </blockquote>
           </Grid>
 
-          <Grid lg={4} md={5} xs={12} sm={8} item className="xs:mb-20 sm:mb-16 h-[480px]" {...{ ...fadeIn, transition: { delay: 0.5 } }}>
+          <Grid lg={4} md={5} xs={12} sm={8} item className="xs:mb-20 sm:mb-16 h-[480px]">
             <img src={props.data.img} alt="" className="rounded-[6px] object-cover h-full" />
           </Grid>
           
-          <Grid lg={2} md={2} xs={6} sm={5} item className="  xs:ml-[0px] sm:ml-[0px] ml-[20px]" {...{ ...fadeIn, transition: { delay: 0.8 } }}>
+          <Grid lg={2} md={2} xs={6} sm={5} item className="  xs:ml-[0px] sm:ml-[0px] ml-[20px]" >
             <Contagem 
               theme="counter-style-03" 
               grid="pl-[30px] xs:pl-[0px] sm:pl-[0px]" 

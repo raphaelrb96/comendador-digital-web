@@ -1,7 +1,7 @@
 
 import {fadeIn} from '../../functions/GlobalAnimations.jsx';
 import {dataHeroUm, InteractiveBannersData01, objHeadersComItens} from '../../functions/examples';
-import ContainerListaTextoUm from '../../components/Containers/ContainerListaTextoUm';
+import ContainerListaTextoUm from "../../components/Containers/ContainerListaTextoUm";
 import ContainerListaTextoDois from '../../components/Containers/ContainerListaTextoDois';
 import HeroTres from '../../components/Hero/HeroTres';
 import { Grid } from '@mui/material';

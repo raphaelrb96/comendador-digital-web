@@ -19,7 +19,6 @@ const BannerRotativo = (props) => {
                                 <div
                                     className="rm-rotate-box px-3 xs:mt-8 sm:mt-5 md:mt-3 text-center"
                                     initial={{ opacity: 0, transform: "perspective(400px) rotateY(90deg)" }}
-                                    whileInView={{ opacity: 1, transform: "perspective(400px) rotateY(0deg)" }}
                                     viewport={{ once: true }}
                                     transition={{ type: "spring", stiffness: 100, duration: 1 }}
                                 >

@@ -5,7 +5,6 @@ import VideoPlayer from '../../../components/VideoPlayer';
 import { Container, Grid } from '@mui/material';
 import Buttons from '../../../components/Button/Buttons';
 import { Form, Formik } from "formik";
-import { InputUm } from "../../Inputs/InputUm";
 import { AnimatePresence, m } from "framer-motion";
 
 
